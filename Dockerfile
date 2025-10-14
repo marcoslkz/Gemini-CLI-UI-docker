@@ -12,7 +12,7 @@ COPY . .
 RUN npm run build || echo "Build ok"
 
 # --- final ---
-FROM node:20-alpine
+FROM node:24-alpine
 
 # Install Docker cli socket
 RUN apk add --no-cache \
