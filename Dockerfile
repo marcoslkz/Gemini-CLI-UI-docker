@@ -28,14 +28,10 @@ FROM node:24-alpine
 
 # Instala dependências básicas de runtime e Docker CLI
 RUN apk add --no-cache \
-    git \
     openssh \
     ca-certificates \
     curl \
-    docker-cli \
-    python3 \
-    make \
-    g++
+    docker-cli 
 
 WORKDIR /app
 
